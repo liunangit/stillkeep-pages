@@ -321,6 +321,60 @@ const langAliases = {
   en: "en"
 };
 
+const screenshotAssets = {
+  "zh-Hans": {
+    items: {
+      mobile: "assets/screenshots/iphone-items-full-540.webp",
+      desktop: "assets/screenshots/iphone-items-full-900.webp",
+      fallback: "assets/screenshots/iphone-items-full.png"
+    },
+    wishlist: {
+      mobile: "assets/screenshots/iphone-wishlist-full-540.webp",
+      desktop: "assets/screenshots/iphone-wishlist-full-900.webp",
+      fallback: "assets/screenshots/iphone-wishlist-full.png"
+    },
+    stats: {
+      mobile: "assets/screenshots/iphone-stats-full-540.webp",
+      desktop: "assets/screenshots/iphone-stats-full-900.webp",
+      fallback: "assets/screenshots/iphone-stats-full.png"
+    }
+  },
+  en: {
+    items: {
+      mobile: "assets/screenshots/iphone-items-en-full-540.webp",
+      desktop: "assets/screenshots/iphone-items-en-full-900.webp",
+      fallback: "assets/screenshots/iphone-items-en-full.png"
+    },
+    wishlist: {
+      mobile: "assets/screenshots/iphone-wishlist-en-full-540.webp",
+      desktop: "assets/screenshots/iphone-wishlist-en-full-900.webp",
+      fallback: "assets/screenshots/iphone-wishlist-en-full.png"
+    },
+    stats: {
+      mobile: "assets/screenshots/iphone-stats-en-full-540.webp",
+      desktop: "assets/screenshots/iphone-stats-en-full-900.webp",
+      fallback: "assets/screenshots/iphone-stats-en-full.png"
+    }
+  },
+  ja: {
+    items: {
+      mobile: "assets/screenshots/iphone-items-ja-full-540.webp",
+      desktop: "assets/screenshots/iphone-items-ja-full-900.webp",
+      fallback: "assets/screenshots/iphone-items-ja-full.png"
+    },
+    wishlist: {
+      mobile: "assets/screenshots/iphone-wishlist-ja-full-540.webp",
+      desktop: "assets/screenshots/iphone-wishlist-ja-full-900.webp",
+      fallback: "assets/screenshots/iphone-wishlist-ja-full.png"
+    },
+    stats: {
+      mobile: "assets/screenshots/iphone-stats-ja-full-540.webp",
+      desktop: "assets/screenshots/iphone-stats-ja-full-900.webp",
+      fallback: "assets/screenshots/iphone-stats-ja-full.png"
+    }
+  }
+};
+
 function resolveLanguage() {
   const saved = localStorage.getItem("stillkeep-language");
   if (saved && translations[saved]) return saved;
@@ -377,6 +431,24 @@ function renderDocument(page, lang) {
   }));
 }
 
+function applyScreenshots(lang) {
+  const assets = screenshotAssets[lang] || screenshotAssets.en;
+
+  for (const picture of document.querySelectorAll("[data-screenshot]")) {
+    const key = picture.getAttribute("data-screenshot");
+    const imageSet = assets[key];
+    if (!imageSet) continue;
+
+    const mobileSource = picture.querySelector("source[data-size='mobile']");
+    const desktopSource = picture.querySelector("source[data-size='desktop']");
+    const image = picture.querySelector("img");
+
+    if (mobileSource) mobileSource.srcset = imageSet.mobile;
+    if (desktopSource) desktopSource.srcset = imageSet.desktop;
+    if (image) image.src = imageSet.fallback;
+  }
+}
+
 function applyLanguage(lang) {
   const dictionary = translations[lang] || translations.en;
   document.documentElement.lang = lang === "zh-Hans" ? "zh-Hans" : lang;
@@ -392,6 +464,7 @@ function applyLanguage(lang) {
   }
 
   renderDocument(document.body.dataset.page, lang);
+  applyScreenshots(lang);
 }
 
 for (const button of document.querySelectorAll("[data-lang]")) {
