@@ -6,7 +6,7 @@
   <title>Stillkeep</title>
   <meta name="description" content="Stillkeep is a calm personal inventory app for tracking what you own, reviewing holding costs, and cooling down before buying.">
   <link rel="icon" href="assets/stillkeep-icon.png">
-  <link rel="stylesheet" href="assets/styles.css?v=2">
+  <link rel="stylesheet" href="assets/styles.css?v=3">
 </head>
 <body data-page="home">
   <header class="site-header">
@@ -67,10 +67,22 @@
       <div class="section-heading">
         <h2 data-i18n="screensTitle">Quiet, clear, and useful.</h2>
       </div>
-      <div class="screenshot-grid">
-        <img src="assets/screenshots/iphone-items-full.png" alt="Stillkeep inventory list screenshot">
-        <img src="assets/screenshots/iphone-wishlist-full.png" alt="Stillkeep wishlist screenshot">
-        <img src="assets/screenshots/iphone-stats-full.png" alt="Stillkeep stats screenshot">
+      <div class="screenshot-grid" aria-label="Stillkeep app screenshots">
+        <picture>
+          <source media="(max-width: 760px)" type="image/webp" srcset="assets/screenshots/iphone-items-full-540.webp">
+          <source type="image/webp" srcset="assets/screenshots/iphone-items-full-900.webp">
+          <img src="assets/screenshots/iphone-items-full.png" alt="Stillkeep inventory list screenshot" loading="lazy" decoding="async">
+        </picture>
+        <picture>
+          <source media="(max-width: 760px)" type="image/webp" srcset="assets/screenshots/iphone-wishlist-full-540.webp">
+          <source type="image/webp" srcset="assets/screenshots/iphone-wishlist-full-900.webp">
+          <img src="assets/screenshots/iphone-wishlist-full.png" alt="Stillkeep wishlist screenshot" loading="lazy" decoding="async">
+        </picture>
+        <picture>
+          <source media="(max-width: 760px)" type="image/webp" srcset="assets/screenshots/iphone-stats-full-540.webp">
+          <source type="image/webp" srcset="assets/screenshots/iphone-stats-full-900.webp">
+          <img src="assets/screenshots/iphone-stats-full.png" alt="Stillkeep stats screenshot" loading="lazy" decoding="async">
+        </picture>
       </div>
     </section>
 

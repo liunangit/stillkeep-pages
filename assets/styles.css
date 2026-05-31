@@ -256,9 +256,13 @@ h1 {
   align-items: start;
 }
 
+.screenshot-grid picture,
 .screenshot-grid img {
   display: block;
   width: 100%;
+}
+
+.screenshot-grid img {
   aspect-ratio: 900 / 1955;
   object-fit: contain;
   border-radius: var(--radius);
@@ -426,9 +430,30 @@ h1 {
   }
 
   .feature-grid,
-  .screenshot-grid,
   .download-section {
     grid-template-columns: 1fr;
+  }
+
+  .screenshot-grid {
+    display: flex;
+    gap: 14px;
+    width: calc(100% + 32px);
+    margin-left: -16px;
+    padding: 2px 16px 28px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-padding-inline: 16px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .screenshot-grid picture {
+    flex: 0 0 78vw;
+    scroll-snap-align: center;
+  }
+
+  .screenshot-grid::-webkit-scrollbar {
+    display: none;
   }
 
   .feature-card {
