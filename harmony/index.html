@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>留物 HarmonyOS</title>
+  <meta name="description" content="留物 HarmonyOS 版功能介绍。安静记录真正拥有的东西，也把想买的东西先放一放。">
+  <link rel="icon" href="../assets/stillkeep-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="harmony">
+  <header class="site-header">
+    <a class="brand" href="../index.html" aria-label="Stillkeep home">
+      <img src="../assets/stillkeep-icon.png" alt="" class="brand-icon">
+      <span data-i18n="brandName">留物</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="../privacy.html" data-i18n="navPrivacy">隐私政策</a>
+      <a href="../support.html" data-i18n="navSupport">技术支持</a>
+    </nav>
+    <div class="language-switcher" aria-label="Language">
+      <button type="button" data-lang="zh-Hans">中文</button>
+      <button type="button" data-lang="en">EN</button>
+      <button type="button" data-lang="ja">日本語</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img class="hero-background" src="../assets/brand/hero-still-life.jpg" alt="">
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="homeEyebrow">HarmonyOS 原生应用</p>
+        <h1 data-i18n="homeTitle">留物</h1>
+        <p class="lead" data-i18n="homeLead">把真正拥有的东西安静地记录下来，也把想买的东西先放一放。</p>
+        <div class="actions">
+          <a class="button primary" href="#features" data-i18n="homeLearnAction">了解功能</a>
+          <a class="button secondary" href="#screens" data-i18n="homeScreensAction">查看界面</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-band" id="features">
+      <div class="section-heading">
+        <h2 data-i18n="featuresTitle">看清拥有，冷静想买。</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span class="feature-mark">01</span>
+          <h3 data-i18n="featureInventoryTitle">清爽的物品清单</h3>
+          <p data-i18n="featureInventoryBody">记录名称、分类、价格、日期、照片和喜爱评分，不把生活变成表格。</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-mark">02</span>
+          <h3 data-i18n="featureWishlistTitle">更冷静的想买清单</h3>
+          <p data-i18n="featureWishlistBody">把想买的东西先放下来，等冲动退去后再决定。</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-mark">03</span>
+          <h3 data-i18n="featureStatsTitle">看得见的持有成本</h3>
+          <p data-i18n="featureStatsBody">查看日均成本、分类分布和那些仍然值得留下的物品。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="screenshots-section" id="screens">
+      <div class="section-heading">
+        <h2 data-i18n="screensTitle">安静，但信息清楚。</h2>
+      </div>
+      <div class="screenshot-grid" aria-label="Stillkeep app screenshots">
+        <picture data-screenshot="items">
+          <source data-size="mobile" media="(max-width: 760px)" type="image/webp" srcset="../assets/screenshots/iphone-items-full-540.webp">
+          <source data-size="desktop" type="image/webp" srcset="../assets/screenshots/iphone-items-full-900.webp">
+          <img src="../assets/screenshots/iphone-items-full.png" alt="留物物品列表截图" loading="eager" decoding="async">
+        </picture>
+        <picture data-screenshot="wishlist">
+          <source data-size="mobile" media="(max-width: 760px)" type="image/webp" srcset="../assets/screenshots/iphone-wishlist-full-540.webp">
+          <source data-size="desktop" type="image/webp" srcset="../assets/screenshots/iphone-wishlist-full-900.webp">
+          <img src="../assets/screenshots/iphone-wishlist-full.png" alt="留物想买截图" loading="eager" decoding="async">
+        </picture>
+        <picture data-screenshot="stats">
+          <source data-size="mobile" media="(max-width: 760px)" type="image/webp" srcset="../assets/screenshots/iphone-stats-full-540.webp">
+          <source data-size="desktop" type="image/webp" srcset="../assets/screenshots/iphone-stats-full-900.webp">
+          <img src="../assets/screenshots/iphone-stats-full.png" alt="留物统计截图" loading="eager" decoding="async">
+        </picture>
+      </div>
+    </section>
+
+    <section class="intro-section">
+      <div class="intro-copy">
+        <p class="eyebrow" data-i18n="introEyebrow">HarmonyOS</p>
+        <h2 data-i18n="introTitle">为鸿蒙设备重新实现。</h2>
+        <p data-i18n="introBody">保持留物的安静、清晰和克制。数据导入导出与 iOS 版兼容，适合在不同设备之间继续整理自己的物品。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span data-i18n="footer">© 2026 留物。保留所有权利。</span>
+  </footer>
+
+  <script src="i18n.js"></script>
+</body>
+</html>
