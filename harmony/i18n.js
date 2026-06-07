@@ -80,53 +80,53 @@ const langAliases = {
 const screenshotAssets = {
   "zh-Hans": {
     items: {
-      mobile: "../assets/screenshots/iphone-items-full-540.webp",
-      desktop: "../assets/screenshots/iphone-items-full-900.webp",
-      fallback: "../assets/screenshots/iphone-items-full.png"
+      mobile: "../assets/screenshots/harmony-items-full-540.jpg",
+      desktop: "../assets/screenshots/harmony-items-full-900.jpg",
+      fallback: "../assets/screenshots/harmony-items-full.jpg"
     },
     wishlist: {
-      mobile: "../assets/screenshots/iphone-wishlist-full-540.webp",
-      desktop: "../assets/screenshots/iphone-wishlist-full-900.webp",
-      fallback: "../assets/screenshots/iphone-wishlist-full.png"
+      mobile: "../assets/screenshots/harmony-wishlist-full-540.jpg",
+      desktop: "../assets/screenshots/harmony-wishlist-full-900.jpg",
+      fallback: "../assets/screenshots/harmony-wishlist-full.jpg"
     },
     stats: {
-      mobile: "../assets/screenshots/iphone-stats-full-540.webp",
-      desktop: "../assets/screenshots/iphone-stats-full-900.webp",
-      fallback: "../assets/screenshots/iphone-stats-full.png"
+      mobile: "../assets/screenshots/harmony-stats-full-540.jpg",
+      desktop: "../assets/screenshots/harmony-stats-full-900.jpg",
+      fallback: "../assets/screenshots/harmony-stats-full.jpg"
     }
   },
   en: {
     items: {
-      mobile: "../assets/screenshots/iphone-items-en-full-540.webp",
-      desktop: "../assets/screenshots/iphone-items-en-full-900.webp",
-      fallback: "../assets/screenshots/iphone-items-en-full.png"
+      mobile: "../assets/screenshots/harmony-items-full-540.jpg",
+      desktop: "../assets/screenshots/harmony-items-full-900.jpg",
+      fallback: "../assets/screenshots/harmony-items-full.jpg"
     },
     wishlist: {
-      mobile: "../assets/screenshots/iphone-wishlist-en-full-540.webp",
-      desktop: "../assets/screenshots/iphone-wishlist-en-full-900.webp",
-      fallback: "../assets/screenshots/iphone-wishlist-en-full.png"
+      mobile: "../assets/screenshots/harmony-wishlist-full-540.jpg",
+      desktop: "../assets/screenshots/harmony-wishlist-full-900.jpg",
+      fallback: "../assets/screenshots/harmony-wishlist-full.jpg"
     },
     stats: {
-      mobile: "../assets/screenshots/iphone-stats-en-full-540.webp",
-      desktop: "../assets/screenshots/iphone-stats-en-full-900.webp",
-      fallback: "../assets/screenshots/iphone-stats-en-full.png"
+      mobile: "../assets/screenshots/harmony-stats-full-540.jpg",
+      desktop: "../assets/screenshots/harmony-stats-full-900.jpg",
+      fallback: "../assets/screenshots/harmony-stats-full.jpg"
     }
   },
   ja: {
     items: {
-      mobile: "../assets/screenshots/iphone-items-ja-full-540.webp",
-      desktop: "../assets/screenshots/iphone-items-ja-full-900.webp",
-      fallback: "../assets/screenshots/iphone-items-ja-full.png"
+      mobile: "../assets/screenshots/harmony-items-full-540.jpg",
+      desktop: "../assets/screenshots/harmony-items-full-900.jpg",
+      fallback: "../assets/screenshots/harmony-items-full.jpg"
     },
     wishlist: {
-      mobile: "../assets/screenshots/iphone-wishlist-ja-full-540.webp",
-      desktop: "../assets/screenshots/iphone-wishlist-ja-full-900.webp",
-      fallback: "../assets/screenshots/iphone-wishlist-ja-full.png"
+      mobile: "../assets/screenshots/harmony-wishlist-full-540.jpg",
+      desktop: "../assets/screenshots/harmony-wishlist-full-900.jpg",
+      fallback: "../assets/screenshots/harmony-wishlist-full.jpg"
     },
     stats: {
-      mobile: "../assets/screenshots/iphone-stats-ja-full-540.webp",
-      desktop: "../assets/screenshots/iphone-stats-ja-full-900.webp",
-      fallback: "../assets/screenshots/iphone-stats-ja-full.png"
+      mobile: "../assets/screenshots/harmony-stats-full-540.jpg",
+      desktop: "../assets/screenshots/harmony-stats-full-900.jpg",
+      fallback: "../assets/screenshots/harmony-stats-full.jpg"
     }
   }
 };
